@@ -6,7 +6,7 @@ class Luhn
 
 	function __construct()
 	{
-		echo 'Luhn Algoritm Engine';
+		
 	}
 
 	public function setCardNumber (int $data)
