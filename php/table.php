@@ -3,7 +3,7 @@
 require_once 'luhn.class.php';
 
 $luhn = new Luhn();
-
-$luhn->validate('465727');
+$luhn->setCardNumber('465727');
+var_dump($luhn->getCardNumber());
 
 ?>
