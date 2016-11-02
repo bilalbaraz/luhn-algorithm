@@ -3,7 +3,7 @@
 class Luhn
 {
 	
-	public function validate ($number)
+	public function validate (int $number)
 	{
 		echo $number;
 	}
