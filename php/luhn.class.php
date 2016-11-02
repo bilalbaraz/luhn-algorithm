@@ -6,7 +6,7 @@ class Luhn
 
 	function __construct()
 	{
-		
+
 	}
 
 	public function setCardNumber (int $data)
@@ -17,6 +17,11 @@ class Luhn
 	public function getCardNumber ()
 	{
 		return $this->number;
+	}
+
+	public function validator()
+	{
+		return false;
 	}
 	
 }
