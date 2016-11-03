@@ -3,7 +3,7 @@ various solutions for luhn algorithm
 
 # Usage by Command Line
 
-php -f commandline.php card-number-input
+```php -f commandline.php card-number-input```
 
 example: php -f commandline.php 378282246310005
 
@@ -14,3 +14,7 @@ example: php -f commandline.php 378282246310005
 | American Express | 378282246310005    |
 | Diners Club      | 30569309025904     |
 | Visa             | 4012888888881881   |
+
+# Test by PHPUnit for PHP Script
+
+```phpunit LuhnAlgorithmTest.php```
