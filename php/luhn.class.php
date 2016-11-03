@@ -9,9 +9,9 @@ class Luhn
 
 	}
 
-	public function setCardNumber (int $data)
+	public function setCardNumber (string $data)
 	{
-		$this->number = $data;
+		$this->number = $this->toInteger($data);
 	}
 
 	public function getCardNumber ()
@@ -22,6 +22,10 @@ class Luhn
 	public function validator()
 	{
 		return false;
+	}
+
+	public static function toInteger(string $string) {
+		return preg_replace("/[^\d]/", "", $string);
 	}
 	
 }
