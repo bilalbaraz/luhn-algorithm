@@ -14,7 +14,7 @@ class Luhn
 		$this->number = $this->toInteger($data);
 	}
 
-	public function getCardNumber ()
+	public function getCardNumber () : int
 	{
 		return $this->number;
 	}
@@ -24,7 +24,8 @@ class Luhn
 		return false;
 	}
 
-	public static function toInteger(string $string) {
+	public static function toInteger(string $string) : int
+	{
 		return preg_replace("/[^\d]/", "", $string);
 	}
 	
