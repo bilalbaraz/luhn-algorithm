@@ -1,6 +1,6 @@
 <?php
 
-require_once 'luhn.class.php';
+require_once 'Luhn.class.php';
 
 $luhn = new Luhn();
 $luhn->setCardNumber('465727');
