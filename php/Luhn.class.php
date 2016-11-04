@@ -2,7 +2,7 @@
 
 class Luhn
 {
-	private $number;
+	private $number = 0;
 
 	function __construct()
 	{
@@ -19,12 +19,12 @@ class Luhn
 		return $this->number;
 	}
 
-	public function validator()
+	public function validator() : boolean
 	{
 		return false;
 	}
 
-	public static function toInteger(string $string) : int
+	protected function toInteger(string $string) : int
 	{
 		return preg_replace("/[^\d]/", "", $string);
 	}

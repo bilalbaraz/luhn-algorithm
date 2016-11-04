@@ -11,11 +11,16 @@ class LuhnAlgorithmTest extends TestCase
     function __construct()
     {
         $this->arrange = new Luhn();
-        $this->arrange->setCardNumber('bilal465727');
+    }
+
+    public function test_isCardNumberEmpty()
+    {
+        $this->assertEquals(0, $this->arrange->getCardNumber());
     }
 
     public function test_isCardNumberInteger()
     {
+        $this->arrange->setCardNumber('bilal465727');
         $this->assertInternalType('int', $this->arrange->getCardNumber());
     }
 
